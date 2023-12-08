@@ -1,8 +1,9 @@
 import React from 'react';
 import Input from '../Input';
 import useForm from '../../hooks/useFormLogin';
-import BtnPrimary from '../BtnPrimary';
+import BtnPrimary from '../Btns';
 import { Link } from 'react-router-dom';
+import verifyLogin from '../../utils/verifyLogin';
 
 const FormLogin = () => {
   const [formData, handleInputChange] = useForm({
@@ -13,17 +14,20 @@ const FormLogin = () => {
   const [error, setError] = React.useState(null);
   const [loading, setLoading] = React.useState(false);
 
+  
+
   const handleLogin = (e) => {
     e.preventDefault();
-    if (!formData.email || !formData.password) {
-      setError('*** Please, enter your email and password correctly');
-      return;
-    } else if (formData.password.length < 6) {
-      setError('*** The password must be at least 6 characters');
+    
+    const message = verifyLogin(formData.email, formData.password);
+
+    if (message !== true) {
+      setError(message);
       return;
     }
+  
     setLoading(true);
-    console.log('Evento de submit disparado');
+    console.log('Enviando...');
     console.log('Email: ', formData.email);
     console.log('Password: ', formData.password);
     setError('');
@@ -59,7 +63,7 @@ const FormLogin = () => {
         </small>
         <small>
 
-          <Link to="/forgot-password" className="text-sm text-gray-400">
+          <Link to="/forgot-password" className="text-sm text-gray-400 hover:underline">
             Forgot Password?
           </Link>
         </small>

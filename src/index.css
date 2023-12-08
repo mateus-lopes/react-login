@@ -22,11 +22,11 @@ body {
   transition: all .3s ease-in-out;
 }
 
-a {
+/* a {
   transition: all .3s ease-in-out;
 }
 
 a:hover {
   text-decoration: none;
   color: #FF0052;
-}
+} */

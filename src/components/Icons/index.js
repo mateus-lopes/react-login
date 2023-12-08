@@ -1,6 +1,6 @@
 import React from "react";
-import IconFacebook from "./IconFacebook";
-import IconGoogle from "./IconGoogle";
+import IconFacebook from "../Icons/IconFacebook";
+import IconGoogle from "../Icons/IconGoogle";
 
 const BtnIcon = ({ icon, text, ...props }) => {
   

@@ -1,7 +1,7 @@
 import React from 'react';
 import Input from '../Input';
 import useForm from '../../hooks/useFormLogin';
-import BtnPrimary from '../BtnPrimary';
+import BtnPrimary from '../Btns';
 import { Link } from 'react-router-dom';
 
 const FormLogin = () => {

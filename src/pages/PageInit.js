@@ -1,9 +1,9 @@
 import React from "react";
-import Container from "../components/Container";
+import Container from "../components/Containers";
 import BackImage from "../components/BackImage";
 import TitleH2 from "../components/TitleH2";
-import BtnIcon from "../components/BtnIcon";
-import BtnPrimary from "../components/BtnPrimary";
+import BtnStroke from "../components/Btns/BtnStroke";
+import BtnPrimary from "../components/Btns";
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -20,7 +20,7 @@ const Login = () => {
               <BtnPrimary text="Let's go" />
             </Link>
             <Link to="/">
-              <BtnIcon icon="a" text="Help" />
+              <BtnStroke text="Help" />
             </Link>
           </div>
         </BackImage>

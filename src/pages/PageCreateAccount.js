@@ -13,7 +13,7 @@ const CreateAccount = () => {
       <Container>
         <BackImage />
         <ContainerForm>
-          <TitleH2 title="Sign up to LoginApp" />
+          {/* <TitleH2 title="Sign up to LoginApp" /> */}
           <div className="flex justify-center gap-4">
             <BtnIcon text="" icon="google" />
             <BtnIcon text="" icon="facebook" />

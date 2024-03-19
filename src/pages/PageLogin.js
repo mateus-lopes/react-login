@@ -13,7 +13,7 @@ const Login = () => {
       <Container>
         <BackImage />
         <ContainerForm>
-          <TitleH2 title="Sign in to LoginApp" />
+          {/* <TitleH2 title="Sign in to LoginApp" /> */}
           <BtnIcon text="Sign In With Google" icon="google" />
           <BtnIcon text="Sign In With Facebook" icon="facebook" />
           <LineHr text="ou" />

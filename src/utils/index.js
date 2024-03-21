@@ -1,4 +1,4 @@
-import verifyCreateAccount from "./verifyCreateAccount";
-import verifyLogin from "./verifyLogin";
+import verifySignUp from "./login/verifySignUp";
+import verifySignIn from "./login/verifySignIn";
 
-export { verifyCreateAccount, verifyLogin };
+export { verifySignUp, verifySignIn };

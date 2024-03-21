@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import formLoginReducer from '../features/login/formLoginSlice';
+import userReducer from '../features/login/userSlice';
 
 export const store = configureStore({
     reducer: {
-        formLogin: formLoginReducer,
+        formLogin: userReducer,
     }
 });

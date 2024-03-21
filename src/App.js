@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
 import Init from './pages/PageInit';
-import Login from './pages/PageLogin';
-import CreateAccount from './pages/PageCreateAccount';
+import Login from './pages/PageSignIn';
+import CreateAccount from './pages/PageSignUp';
 
 const App = () => {
   return (

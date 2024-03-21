@@ -2,28 +2,24 @@ import React from "react";
 import Container from "../components/Containers";
 import BackImage from "../components/BackImage";
 import ContainerForm from "../components/Containers/Form";
-import FormCreateAccount from "../components/Forms/CreateAccount";
-import TitleH2 from "../components/TitleH2";
+import FormLogin from "../components/Forms/FormSignIn";
 import BtnIcon from "../components/Icons";
 import LineHr from "../components/LineHr";
 
-const CreateAccount = () => {
+const Login = () => {
   return (
     <main>
       <Container>
         <BackImage />
         <ContainerForm>
-          {/* <TitleH2 title="Sign up to LoginApp" /> */}
-          <div className="flex justify-center gap-4">
-            <BtnIcon text="" icon="google" />
-            <BtnIcon text="" icon="facebook" />
-          </div>
+          <BtnIcon text="Sign In With Google" icon="google" />
+          <BtnIcon text="Sign In With Facebook" icon="facebook" />
           <LineHr text="ou" />
-          <FormCreateAccount />
+          <FormLogin />
         </ContainerForm>
       </Container>
     </main>
   );
 };
 
-export default CreateAccount;
+export default Login;
